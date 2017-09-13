@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta id="TeckenUpps" charset="UTF-8">
+<link rel="stylesheet" href="C:\Users\Lexicon\Documents\Elios Grejer\Elios Front End\CSS\SokobanStilFil.css">
+</head>
+
+
+<body onkeydown="whichButton(event)">
+ 
+    <p id="Spelplan"></p>
+    <p id="VisaSpelplan"></p>
+    <p id="Figuren"></p>
+    
+    <!--// Presentation av spelplanen mot skärmen //-->
+    <article id="Art1">
+        <p id="PlanRad1"></p>
+        <p id="PlanRad2"></p>
+        <p id="PlanRad3"></p>
+        <p id="PlanRad4"></p>
+        <p id="PlanRad5"></p>
+        <p id="PlanRad6"></p>
+        <p id="PlanRad7"></p>
+        <p id="PlanRad8"></p>
+        <p id="PlanRad9"></p>
+        <p id="PlanRad10"></p>
+        <p id="PlanRad11"></p>
+        <p id="PlanRad12"></p>
+        <p id="PlanRad13"></p>
+        <p id="PlanRad14"></p>
+        <p id="PlanRad15"></p>
+        <p id="PlanRad16"></p>
+    </article>
+
+    <p><b>Note:</b> Click on this page, and press a key on your keyboard!</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+
+    <script src="C:\Users\Lexicon\Documents\Elios Grejer\Elios Front End\JavaScript\SokobanVariabler.js">
+    </script>
+
+        <main>
+
+              <!-- // event.keyCode avgör vilken knapp som har tryckts ned... // -->
+            <script>
+                function whichButton(event)
+                {
+                    switch (event.keyCode)
+                    {
+                        case 37:
+                            // Tar reda på var spelfiguren (P) befinner sig och flyttar den ett steg åt vänster. //
+                            var Rindx = 2;
+                            var Pos = 0
+                            document.getElementById("demo2").innerHTML = "Vänster - 37";
+                            //Length = ("TabellRad" + Rindx).length
+
+                            for (var i = 0; i < 20; i = i + 1)
+                            {
+                                if (TabellRad1[i] == "P")
+                                {
+                                    Pos = i + 1;
+                                    document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 1 och position: " + Pos;
+
+                                    //if (TabellRad1[i - 1] == "W")
+                                    //{
+                                    //}
+                                }
+                            };
+
+                            //for (var i = 0, length = TabellRad2.length; i < length; i = i + 1) {
+                            //    if (TabellRad2[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 2 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad3.length; i < length; i = i + 1) {
+                            //    if (TabellRad3[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 3 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad4.length; i < length; i = i + 1) {
+                            //    if (TabellRad4[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 4 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad5.length; i < length; i = i + 1) {
+                            //    if (TabellRad5[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 5 och position: " + i;
+                            //        console.log(TabellRad1[i]);
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad6.length; i < length; i = i + 1) {
+                            //    if (TabellRad6[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 6 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad7.length; i < length; i = i + 1) {
+                            //    if (TabellRad7[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 7 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad8.length; i < length; i = i + 1) {
+                            //    if (TabellRad8[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 8 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad9.length; i < length; i = i + 1) {
+                            //    if (TabellRad9[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 9 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad10.length; i < length; i = i + 1) {
+                            //    if (TabellRad10[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 10 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad11.length; i < length; i = i + 1) {
+                            //    if (TabellRad11[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 11 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad12.length; i < length; i = i + 1) {
+                            //    if (TabellRad12[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 12 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad13.length; i < length; i = i + 1) {
+                            //    if (TabellRad13[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 13 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad14.length; i < length; i = i + 1) {
+                            //    if (TabellRad14[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 14 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad15.length; i < length; i = i + 1) {
+                            //    if (TabellRad15[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 15 och position: " + i;
+                            //    }
+                            //};
+
+                            //for (var i = 0, length = TabellRad16.length; i < length; i = i + 1) {
+                            //    if (TabellRad16[i] == "P") {
+                            //        i = i + 1;
+                            //        document.getElementById("Figuren").innerHTML = "Figuren (P) finns i tabellrad nr 16 och position: " + i;
+                            //    }
+                            //};
+
+
+                            break;
+                        case 38:
+                            document.getElementById("demo2").innerHTML = "Upp";
+                            break;
+                        case 39:
+                            document.getElementById("demo2").innerHTML = "Höger";
+                            break;
+                        case 40:
+                            document.getElementById("demo2").innerHTML = "Ner";
+                            break;
+                        default:
+                            document.getElementById("demo1").innerHTML = "Använd endast piltangenterna för att spela!";
+                            break;
+                    }
+                }
+            </script>
+        </main>
+</body>
+</html>

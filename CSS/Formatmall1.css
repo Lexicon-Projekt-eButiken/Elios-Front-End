@@ -1,0 +1,157 @@
+body
+{
+    font-family: Calibri, Arial, Sans-serif;
+    max-width: 1024px;
+    height: 31cm;
+    margin: auto;  
+    background-color: hsl(48, 100%, 75%);
+    border: 1px solid;
+}
+
+h1 
+{
+    color: navy;
+    background-color: hsl(24, 100%, 50%);
+    position: relative;
+    max-height: 4cm;
+    margin: 0cm 0cm 0.65cm 0cm;
+    padding-top: 0.4cm;
+    padding-bottom: 0.3cm;
+    text-indent: 0.2cm;
+    border-bottom: 4px solid black;
+    }
+
+nav
+{
+    background-color: hsl(207, 44%, 45%);
+    position: relative;    
+    top: -2.5cm;
+    left: 290px;
+    max-width: 659px;
+    border-left: 1px solid;  
+    border-right: 1px solid;  
+ }
+
+#MenyOver
+{
+     /*Removes the bullets. A navigation bar does not need list markers*/
+    list-style-type: none;
+    /*Removes browser default settings*/
+    padding: 0.10cm;
+    /*De två värderna ovan: Is the standard code used in both vertical, and horizontal navigation bars.*/
+
+    /*Nedan: Is added to the ul element to prevent li elements from going outside of the list.*/
+    overflow: hidden;
+    /*Makes the whole link area clickable (not just the text)*/
+    display: block;
+ }
+
+#Rad1
+{
+/*Removes the line breaks before and after each list item, to display them on one line*/
+ float: left;
+   padding-left: 0.2cm;
+    margin: 0.5cm 0.3cm 0.5cm 0.2cm;
+     outline: 1px solid black;
+    outline-offset: 0.8cm;
+     /*Tar bort länkarnas understrykning*/
+     text-decoration: none;
+}
+
+#Rad2
+{
+/*Removes the line breaks before and after each list item, to display them on one line*/
+ float: left;
+  padding-left: 0cm;
+  padding-right: 0.4cm;
+      margin: 0.5cm 0.5cm 0.5cm 1.2cm;
+    outline: 1px solid black;
+    outline-offset: 0.70cm;
+     /*Tar bort länkarnas understrykning*/
+     text-decoration: none;
+ }
+
+#Rad3
+{
+/*Removes the line breaks before and after each list item, to display them on one line*/
+ float: left;
+  padding-left: 0cm;
+    padding-right: 0.3cm;
+      margin: 0.5cm 0.2cm 0.2cm 0.9cm;
+    outline: 1px solid black;
+    outline-offset: 0.7cm;
+     /*Tar bort länkarnas understrykning*/
+     text-decoration: none;
+}
+
+#Rad4
+{
+/*Removes the line breaks before and after each list item, to display them on one line*/
+ float: left;
+   margin: 0.5cm 0cm 0.54cm 1.2cm;
+   outline: 1px solid black;
+   outline-offset: 0.7cm;
+     /*Tar bort länkarnas understrykning*/
+     text-decoration: none;
+}
+
+h2
+{
+    position: relative;
+    top: -98px;
+    left: 8px;
+    max-width: 400px;
+}
+
+#Citatet
+{
+      font-family: "Arial Black";
+      font-size: 72%;
+      position: relative;
+      top: -2.8cm;
+      left: 8px;
+      max-width: 18cm;
+}
+
+#Art1
+{
+    position: relative;
+    top: -2.5cm;
+    left: 5px;
+    max-width: 280px;
+    height: 26cm;
+}
+
+#Art2
+{
+    position: relative;
+    top: -28.9cm;
+    left: 350px;
+    max-width: 300px;
+    height: 26cm;
+}
+
+#SidRub
+{
+   text-align: center;
+}
+
+aside
+{
+     background-color: hsl(120, 25%, 75%);
+     position: relative;
+     top: -58.9cm;
+     left: 720px;
+     width: 8cm;
+     height: 25cm;
+     border: 1px solid;  
+}
+
+footer {
+    background-color: hsl(270, 50%, 50%);
+    max-height: 3cm;
+    text-align: center;
+    border: 1px solid;
+    margin: -57cm 0cm 0.6cm 0cm;
+}
+

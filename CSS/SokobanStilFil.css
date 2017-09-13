@@ -1,0 +1,23 @@
+body
+{
+    max-width: 1024px;
+    margin: auto;  
+    background-color: hsl(48, 100%, 75%);
+}
+
+
+#Art1
+{
+    font-family: Lucida Console, Monospace;
+    text-align: center;
+    max-width: 11cm;
+    height: 13.5cm;
+    background-color: hsl(33, 100%, 65%)
+}
+
+#Test
+{
+}
+
+
+
